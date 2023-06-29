@@ -19,6 +19,8 @@ const COMPLETE_LIST = ingredients.map(ingredient => {
   item.textContent = ingredient;
   // se añade la clase al elemento item
   item.classList.add('item');
-  // se agrega el elemento item(variable) como hijo de SEARCH_LIST(UL)
-  SEARCH_LIST.append(item);
+  return item;
 });
+
+// se agrega el elemento COMPLETE_LIST como hijo de SEARCH_LIST(UL)
+SEARCH_LIST.append(...COMPLETE_LIST);

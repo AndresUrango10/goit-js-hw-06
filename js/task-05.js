@@ -8,7 +8,7 @@ INPUT_NAME.addEventListener('input', event => {
   // se actualiza el contenido del elemento (OUTPUT_NAME("Anonymous")), con el (event.target.value) para que muestre lo que se escriba.
   OUTPUT_NAME.textContent = event.target.value;
   // Se verifica si el valor del campo de entrada es una cadena vacía (''). Si es así, se asigna el texto "Anonymous" al elemento outputName.
-  if (event.target.value === '') {
+  if (event.target.value.trim() === '') {
     return (OUTPUT_NAME.textContent = 'Anonymous');
   }
 });

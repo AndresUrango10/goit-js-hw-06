@@ -2,6 +2,9 @@
 let fontSizeControl = document.querySelector('#font-size-control');
 let textElement = document.querySelector('#text');
 
+// inicializar
+textElement.style.fontSize = fontSizeControl.value + 'px';
+
 // se añade un event listener al elemento fontSizeControl para el evento "input"
 fontSizeControl.addEventListener('input', e => {
   // se guarda el valor que la persona seleccione en el contro deslizante y se guarda en la variable "INCREMENT_FONSIZE"

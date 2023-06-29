@@ -11,7 +11,7 @@ validationInput.addEventListener('blur', e => {
 
   // verifica la longitud del valor ingresado en el input y aplica las clases correspondientes para indicar si el valor es válido o no.
   //  Si la longitud es suficiente, se muestra como válido, y si no es suficiente, se muestra como inválido.
-  if (INPUT_LENGTH >= e.target.dataset.length) {
+  if (INPUT_LENGTH === Number(e.target.dataset.length)) {
     validationInput.classList.remove('invalid');
     validationInput.classList.add('valid');
   } else {
